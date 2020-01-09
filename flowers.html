@@ -1,0 +1,23 @@
+{% extends 'layouts.html' %}
+
+{% block body %}
+    <form class="example" action="/flowers" style="margin:auto;max-width:300px" method="POST">
+         <input type="text" placeholder="Search Flower" name="search2">
+         <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <div class="jubrotron text-center">
+            <h1> Selected Flower </h1>
+    </div>
+
+    <table border = 1>
+        {% for flower in flowerT %}
+        <tr>
+            <td> {{flower[0]}} </td>
+            <td> {{flower[1]}} </td>
+            <td> {{flower[2]}} </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

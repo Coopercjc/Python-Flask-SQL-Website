@@ -1,0 +1,21 @@
+{% extends 'layouts.html' %}
+
+{% block body %}
+    <div class="jubrotron text-center">
+        <h1> Insert A New Flower Sighting </h1>
+    </div>
+
+    <form action="/NewSighting" method="POST">
+        <input type="text" placeholder="Name" name="name" />
+        <br>
+        <input type="text" placeholder="Person" name="person" />
+        <br>
+        <input type="text" placeholder="Location" name="location" />
+        <br>
+        <input type="date" name="date" />
+        <br>
+        <input type="submit">
+    </form>
+
+
+{% endblock %}

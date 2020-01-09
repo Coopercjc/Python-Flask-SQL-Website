@@ -1,0 +1,20 @@
+{% extends 'layouts.html' %}
+
+{% block body %}
+    <div class="jubrotron text-center">
+        <h1> Update A Flower's Information </h1>
+    </div>
+
+    <form action="/UpdateFlower" method="POST">
+        <input type="text" placeholder="Old Comname" name="OC" />
+        <br>
+        <input type="text" placeholder="New Comname" name="NC" />
+        <br>
+        <input type="text" placeholder="New Genus" name="NG" />
+        <br>
+        <input type="text" placeholder="New Species" name="NS" />
+        <br>
+        <input type="submit">
+    </form>
+
+{% endblock %}
